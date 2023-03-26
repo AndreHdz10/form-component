@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Appointment Form</title>
+  </head>
+  <body>
+    <h2>Stephanie Aragon</h2>
+
+    <button
+      onclick="document.getElementById('id01').style.display='block'"
+      style="width: auto"
+    >
+      Make an Appointment
+    </button>
+
+    <div id="id01" class="modal">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="avatar">
+            <span style="font-weight: bolder">STEPHANIE</span> ARAGON
+            <span style="font-size: 12px"
+              ><br />
+              HAIRSTYLIST</span
+            >
+          </div>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>First Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Last Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            name="psw"
+            required
+          />
+          <label for="uname"><b>Phone Number</b></label>
+          <input
+            type="number"
+            placeholder="Enter Phone Number"
+            name="uname"
+            required
+          />
+          <label for="uname"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="uname" required />
+          <label for="uname"><b>Date</b></label>
+          <input type="date" placeholder="Enter Email" name="uname" required />
+
+          <button type="submit">Confirm Appointment</button>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
